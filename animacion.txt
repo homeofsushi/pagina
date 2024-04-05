@@ -1,0 +1,39 @@
+body{
+	background: linear-gradient(45deg, black,gray,black,gray);
+	animation: animacion 3s infinite;
+
+}
+@keyframes animacion{
+	0%{background-position: 0 100%;}
+	50%{background-position: 50 100%;}
+	100%{background-position: 0 50%;}
+}
+body{
+	margin-top: 0;
+	min-height: 100vh;
+	background-image: url(img/fondo.JPG);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+body:before {
+	content: "";
+	width: 100%;
+	min-height: 100vh;
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	background: black;
+	opacity: 0.7;
+
+}
+.im{
+	display: flex;
+	width: 600px;
+	height: 430px;
+	margin-left: 30px;
+	margin-top: -380px;
+}
